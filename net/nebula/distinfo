@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (nebula-1.7.2.tar.gz) = ffd7961357ef5d912a80761a16fc508de54432cb6854f5d884c449cf3f067a34
+SHA512 (nebula-1.7.2.tar.gz) = b9b871eabdf0ffb05cb350fd665e4cc7c39c9c519837eb4aa88aba4d8d43d62e098da6eb4d2e679100eaa1755f1bb0a3d416a2ea5271ad1e841be1d3434fb341
+Size (nebula-1.7.2.tar.gz) = 988727 bytes
