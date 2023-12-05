@@ -18,6 +18,7 @@ DEPENDS+=	base64>=1.5:../../converters/base64
 DEPENDS+=	getopt>=1.1.6:../../misc/getopt
 DEPENDS+=	gnupg2>=2.0.26:../../security/gnupg2
 DEPENDS+=	tree>=1.7.0:../../sysutils/tree
+DEPENDS+=	xclip>=0.13nb1:../../x11/xclip
 
 EGDIR=			share/examples/password-store
 INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
