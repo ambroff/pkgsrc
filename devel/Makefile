@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4144 2023/12/01 11:28:24 pin Exp $
+# $NetBSD: Makefile,v 1.4148 2023/12/11 09:51:39 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -2390,6 +2390,7 @@ SUBDIR+=	py-approvaltests
 SUBDIR+=	py-archinfo
 SUBDIR+=	py-argcomplete
 SUBDIR+=	py-argparse
+SUBDIR+=	py-argparse-addons
 SUBDIR+=	py-argparse-manpage
 SUBDIR+=	py-args
 SUBDIR+=	py-astor
@@ -2633,8 +2634,8 @@ SUBDIR+=	py-jaraco.envs
 SUBDIR+=	py-jaraco.functools
 SUBDIR+=	py-jaraco.itertools
 SUBDIR+=	py-jaraco.path
-SUBDIR+=	py-jaraco.versioning
 SUBDIR+=	py-jaraco.vcs
+SUBDIR+=	py-jaraco.versioning
 SUBDIR+=	py-jaraco_util
 SUBDIR+=	py-joblib
 SUBDIR+=	py-jupyter-console
@@ -3020,6 +3021,7 @@ SUBDIR+=	py-test-localserver
 SUBDIR+=	py-test-mock
 SUBDIR+=	py-test-mypy
 SUBDIR+=	py-test-mypy-plugins
+SUBDIR+=	py-test-perf
 SUBDIR+=	py-test-pylint
 SUBDIR+=	py-test-pythonpath
 SUBDIR+=	py-test-random-order
@@ -3481,8 +3483,12 @@ SUBDIR+=	tet3
 SUBDIR+=	tevent
 SUBDIR+=	tex-doclicense
 SUBDIR+=	tex-doclicense-doc
+SUBDIR+=	tex-elocalloc
+SUBDIR+=	tex-elocalloc-doc
 SUBDIR+=	tex-etoolbox
 SUBDIR+=	tex-etoolbox-doc
+SUBDIR+=	tex-inlinedef
+SUBDIR+=	tex-inlinedef-doc
 SUBDIR+=	tex-l3backend
 SUBDIR+=	tex-l3backend-doc
 SUBDIR+=	tex-l3experimental

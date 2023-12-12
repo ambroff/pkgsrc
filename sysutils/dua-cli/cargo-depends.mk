@@ -1,4 +1,4 @@
-# $NetBSD: cargo-depends.mk,v 1.16 2023/11/20 11:25:10 pin Exp $
+# $NetBSD: cargo-depends.mk,v 1.18 2023/12/09 16:06:42 pin Exp $
 
 CARGO_CRATE_DEPENDS+=	anstream-0.6.4
 CARGO_CRATE_DEPENDS+=	anstyle-1.0.4
@@ -12,6 +12,7 @@ CARGO_CRATE_DEPENDS+=	bitflags-1.3.2
 CARGO_CRATE_DEPENDS+=	byte-unit-4.0.19
 CARGO_CRATE_DEPENDS+=	cassowary-0.3.0
 CARGO_CRATE_DEPENDS+=	cfg-if-1.0.0
+CARGO_CRATE_DEPENDS+=	chrono-0.4.31
 CARGO_CRATE_DEPENDS+=	clap-4.4.8
 CARGO_CRATE_DEPENDS+=	clap_builder-4.4.8
 CARGO_CRATE_DEPENDS+=	clap_derive-4.4.7
@@ -37,6 +38,7 @@ CARGO_CRATE_DEPENDS+=	hashbrown-0.14.2
 CARGO_CRATE_DEPENDS+=	heck-0.4.1
 CARGO_CRATE_DEPENDS+=	hermit-abi-0.1.19
 CARGO_CRATE_DEPENDS+=	hermit-abi-0.3.3
+CARGO_CRATE_DEPENDS+=	human_format-1.0.3
 CARGO_CRATE_DEPENDS+=	idna-0.4.0
 CARGO_CRATE_DEPENDS+=	indexmap-2.1.0
 CARGO_CRATE_DEPENDS+=	is-docker-0.2.0
@@ -49,6 +51,7 @@ CARGO_CRATE_DEPENDS+=	log-0.4.20
 CARGO_CRATE_DEPENDS+=	malloc_buf-0.0.6
 CARGO_CRATE_DEPENDS+=	memoffset-0.9.0
 CARGO_CRATE_DEPENDS+=	mio-0.8.9
+CARGO_CRATE_DEPENDS+=	num-traits-0.2.17
 CARGO_CRATE_DEPENDS+=	num_cpus-1.16.0
 CARGO_CRATE_DEPENDS+=	numtoa-0.1.0
 CARGO_CRATE_DEPENDS+=	objc-0.2.7

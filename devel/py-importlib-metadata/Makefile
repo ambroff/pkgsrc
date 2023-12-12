@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2023/10/28 19:57:01 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2023/12/11 09:52:13 wiz Exp $
 
-DISTNAME=	importlib_metadata-6.8.0
+DISTNAME=	importlib_metadata-7.0.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/_/-/}
-PKGREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_PYPI:=i/importlib-metadata/}
 
@@ -16,7 +15,8 @@ TOOL_DEPENDS+=	${PYPKGPREFIX}-wheel-[0-9]*:../../devel/py-wheel
 DEPENDS+=	${PYPKGPREFIX}-zipp>=0.5:../../archivers/py-zipp
 TEST_DEPENDS+=	${PYPKGPREFIX}-fakefs-[0-9]*:../../devel/py-fakefs
 TEST_DEPENDS+=	${PYPKGPREFIX}-packaging-[0-9]*:../../devel/py-packaging
-TEST_DEPENDS+=	${PYPKGPREFIX}-test>=6:../../devel/py-test
+TEST_DEPENDS+=	${PYPKGPREFIX}-test-cov-[0-9]*:../../devel/py-test-cov
+TEST_DEPENDS+=	${PYPKGPREFIX}-test-perf-[0-9]*:../../devel/py-test-perf
 
 USE_LANGUAGES=	# none
 
@@ -27,9 +27,6 @@ PYTHON_VERSIONS_INCOMPATIBLE=	27
 .if ${PYTHON_VERSION} < 309
 TEST_DEPENDS+=	${PYPKGPREFIX}-importlib-resources>=1.3:../../devel/py-importlib-resources
 .endif
-
-do-test:
-	cd ${WRKSRC} && ${SETENV} ${TEST_ENV} pytest-${PYVERSSUFFIX} tests
 
 .include "../../lang/python/wheel.mk"
 .include "../../mk/bsd.pkg.mk"

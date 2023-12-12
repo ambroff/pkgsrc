@@ -1,12 +1,11 @@
-@comment $NetBSD: PLIST,v 1.8 2023/01/31 09:28:56 adam Exp $
+@comment $NetBSD: PLIST,v 1.10 2023/12/11 20:53:49 adam Exp $
 bin/isort-${PYVERSSUFFIX}
 bin/isort-identify-imports-${PYVERSSUFFIX}
-${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
-${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
-${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
-${PYSITELIB}/${EGG_INFODIR}/entry_points.txt
-${PYSITELIB}/${EGG_INFODIR}/requires.txt
-${PYSITELIB}/${EGG_INFODIR}/top_level.txt
+${PYSITELIB}/${WHEEL_INFODIR}/LICENSE
+${PYSITELIB}/${WHEEL_INFODIR}/METADATA
+${PYSITELIB}/${WHEEL_INFODIR}/RECORD
+${PYSITELIB}/${WHEEL_INFODIR}/WHEEL
+${PYSITELIB}/${WHEEL_INFODIR}/entry_points.txt
 ${PYSITELIB}/isort/__init__.py
 ${PYSITELIB}/isort/__init__.pyc
 ${PYSITELIB}/isort/__init__.pyo
@@ -118,6 +117,9 @@ ${PYSITELIB}/isort/stdlibs/py310.pyo
 ${PYSITELIB}/isort/stdlibs/py311.py
 ${PYSITELIB}/isort/stdlibs/py311.pyc
 ${PYSITELIB}/isort/stdlibs/py311.pyo
+${PYSITELIB}/isort/stdlibs/py312.py
+${PYSITELIB}/isort/stdlibs/py312.pyc
+${PYSITELIB}/isort/stdlibs/py312.pyo
 ${PYSITELIB}/isort/stdlibs/py36.py
 ${PYSITELIB}/isort/stdlibs/py36.pyc
 ${PYSITELIB}/isort/stdlibs/py36.pyo

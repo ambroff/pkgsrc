@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.80 2023/11/08 13:18:37 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2023/12/07 17:38:13 wiz Exp $
 
-DISTNAME=	shared-mime-info-2.2
-PKGREVISION=	4
+DISTNAME=	shared-mime-info-2.4
 CATEGORIES=	databases
 MASTER_SITES=	https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/${PKGVERSION_NOREV}/
 EXTRACT_SUFX=	.tar.bz2
@@ -14,8 +13,9 @@ LICENSE=	gnu-gpl-v2
 TOOL_DEPENDS+=		gettext-tools>=0.19.8:../../devel/gettext-tools
 TOOL_DEPENDS+=		xmlto>=0:../../textproc/xmlto
 
-USE_LANGUAGES+=		c99
+USE_LANGUAGES+=		c99 c++
 USE_TOOLS+=		bash:test msgfmt pkg-config xgettext
+USE_CXX_FEATURES=	filesystem
 
 .include "../../mk/bsd.prefs.mk"
 

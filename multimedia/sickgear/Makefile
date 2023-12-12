@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2023/10/23 06:37:49 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2023/12/10 14:36:18 js Exp $
 
 DISTNAME=	release_${PKGVERSION_NOREV}
-PKGNAME=	sickgear-0.23.14
-PKGREVISION=	5
+PKGNAME=	sickgear-3.30.5
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_GITHUB:=SickGear/}
 GITHUB_PROJECT=	SickGear
@@ -23,9 +22,6 @@ REPLACE_PYTHON+=	sickgear.py
 REPLACE_PYTHON+=	SickBeard.py
 REPLACE_PYTHON+=	autoProcessTV/SickGear-NG/SickGear-NG.py
 REPLACE_PYTHON+=	autoProcessTV/autoProcessTV.py
-REPLACE_PYTHON+=	autoProcessTV/hellaToSickBeard.py
-REPLACE_PYTHON+=	autoProcessTV/mediaToSickbeard.py
-REPLACE_PYTHON+=	autoProcessTV/sabToSickBeard.py
 REPLACE_PYTHON+=	autoProcessTV/sabToSickGear.py
 
 CHECK_INTERPRETER_SKIP+=	lib/sickgear/init-scripts/init.gentoo
